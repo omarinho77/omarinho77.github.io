@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="submit.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="nome" placeholder="Nome" required><br><br>
+        <input type="text" name="cognome" placeholder="Cognome" required><br><br>
+        <input type="date" name="data-nascita" required><br><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <input type="password" name="password" placeholder="Password" required><br><br>
+        <select name="regione" required>
+            <option value="">Regione...</option>
+            <option value="Lombardia">Lombardia</option>
+            <option value="Lazio">Lazio</option>
+            <option value="Sicilia">Sicilia</option>
+
+
+            
+        </select><br><br>
+        <input type="radio" name="testo" value="acconsento" required>acconsento
+        <input type="radio" name="testo" value="non acconsento">non acconsento<br></br>
+        <textarea name="note" placeholder="Note..." rows="4"></textarea><br><br>
+        <input type="file" name="foto" accept="image/*"><br><br>
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
