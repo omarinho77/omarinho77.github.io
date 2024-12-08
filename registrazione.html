@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrazione</title>
 </head>
 <body>
-        <form action="submit.php" method="post" enctype="multipart/form-data">
-        <input type="text" name="nome" placeholder="Nome" required><br><br>
-        <input type="text" name="cognome" placeholder="Cognome" required><br><br>
-        <input type="date" name="data-nascita" required><br><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
-        <input type="password" name="password" placeholder="Password" required><br><br>
-        <select name="regione" required>
-            <option value="">Regione...</option>
-            <option value="Abruzzo">Abruzzo</option>
-            <option value="Basilicata">Basilicata</option>
-            <option value="Calabria">Calabria</option>
-            <option value="Campania">Campania</option>
-            <option value="Emilia-Romagna">Emilia-Romagna</option>
-            <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
-            <option value="Lazio">Lazio</option>
-            <option value="Liguria">Liguria</option>
-            <option value="Lombardia">Lombardia</option>
-            <option value="Marche">Marche</option>
-            <option value="Molise">Molise</option>
-            <option value="Piemonte">Piemonte</option>
-            <option value="Puglia">Puglia</option>
-            <option value="Sardegna">Sardegna</option>
-            <option value="Sicilia">Sicilia</option>
-            <option value="Toscana">Toscana</option>
-            <option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
-            <option value="Umbria">Umbria</option>
-            <option value="Valle d'Aosta">Valle d'Aosta</option>
-            <option value="Veneto">Veneto</option>
-            </select><br><br>
-        <input type="radio" name="testo" value="acconsento" required>acconsento
-        <input type="radio" name="testo" value="non acconsento">non acconsento<br></br>
-        <textarea name="note" placeholder="Note..." rows="4"></textarea><br><br>
-        <input type="file" name="foto" accept="image/*"><br><br>
-        <input type="submit" value="Invia">
-    </form>
+    <label for = "nome"> Nome </label>
+    <input type = "text" id = "nome">
+    <br>
+    
+    <label for = "cognome"> Cognome </label>
+    <input type = "text" id = "cognome">
+    <br> 
+
+    <label for = "DataDiNascita"> Data di Nascita </label>
+    <input type = "Date" id = "DataDiNascita">
+    <br>
+
+    <label for = "email"> Email </label>
+    <input type = "email" id = "email">
+    <br>
+
+    <label for = "password"> Password </label>
+    <input type = "password" id = "password">
+    <br>
+
+    <label for = "regione"> Regione </label>
+    <select id="regione">
+
+          <option value="Abruzzo">Abruzzo</option>
+    <option value="Basilicata">Basilicata</option>
+    <option value="Calabria">Calabria</option>
+    <option value="Campania">Campania</option>
+    <option value="Emilia-Romagna">Emilia-Romagna</option>
+    <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
+    <option value="Lazio">Lazio</option>
+    <option value="Liguria">Liguria</option>
+    <option value="Lombardia">Lombardia</option>
+    <option value="Marche">Marche</option>
+    <option value="Molise">Molise</option>
+    <option value="Piemonte">Piemonte</option>
+    <option value="Puglia">Puglia</option>
+    <option value="Sardegna">Sardegna</option>
+    <option value="Sicilia">Sicilia</option>
+    <option value="Toscana">Toscana</option>
+    <option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
+    <option value="Umbria">Umbria</option>
+    <option value="Valle d'Aosta">Valle d'Aosta</option>
+    <option value="Veneto">Veneto</option>
+    
+    </select>
+    <br>
+
+    <span>Sesso:</span>
+    <br>
+    <input type="radio" name="sesso" id="maschio">
+    <label for="maschio">Maschio</label>
+    <input type="radio" name="sesso" id="femmina">
+    <label for="femmina">Femmina</label>
+    <br>
+
+    <label for = "note"> Note: </label>
+    <br>
+    <textarea rows = "4" id = "note"> </textarea>
+    <br>
+
+    <label for = "foto"> Foto </label>
+    <input type = "file" id = "foto">
+    <br>
+
+    <label for = "acconsento"> Acconsento </label>
+    <input type = "checkbox" id = "acconsento">
+    <br>
+
+    <input type = "submit" value = "Invia">
+    <br>
 </body>
 </html>
