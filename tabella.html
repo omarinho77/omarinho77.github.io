@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabella</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabella</title>
+  <style>
+    body {
+      background-color: #1f1f1f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #e0e0e0;
+      padding: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #2b2b2b;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px #00000070;
+    }
+
+    td {
+      padding: 12px;
+      text-align: center;
+      font-weight: 500;
+      border: 1px solid #444;
+    }
+
+    tr:first-child td {
+      background-color: #424242;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    tr:nth-child(2) td {
+      background-color: #3a3a3a;
+      font-weight: bold;
+    }
+
+    /* Colori personalizzati per i voti */
+    .green { background-color: #388e3c; color: white; }
+    .yellow { background-color: #fbc02d; color: black; }
+    .orange { background-color: #fb8c00; color: black; }
+    .red { background-color: #d32f2f; color: white; }
+  </style>
 </head>
 <body>
-    <table border = "1px">
-        <tr>
-            <td colspan = "5" align = "center" bgcolor = "lightgrey"> Classe 3C INF </td>
-        </tr>
-        <tr>
-            <td></td>
-            <td> TLC </td>
-            <td> Matematica </td>
-            <td> Informatica </td>
-            <td> Storia </td>
-        </tr>
-        <tr>
-            <td> Anna </td>
-            <td bgcolor = "green"> 8 </td>
-            <td bgcolor = "red"> 4.5 </td>
-            <td bgcolor = "green"> 9 </td>
-            <td bgcolor = "green"> 10 </td>
-        </tr>
-        <tr>
-            <td> Giovanni </td>
-            <td bgcolor = "green"> 6 </td>
-            <td bgcolor = "yellow"> 5.5 </td>
-            <td bgcolor = "green"> 8 </td>
-            <td bgcolor = "green"> 7 </td>
-        </tr>
-        <tr>
-            <td> Sara </td>
-            <td bgcolor = "green"> 9 </td>
-            <td bgcolor = "yellow"> 5.5 </td>
-            <td bgcolor = "orange"> 5 </td>
-            <td bgcolor = "green"> 8 </td>
-        </tr>
-        <tr>
-            <td> Luca </td>
-            <td bgcolor = "orange"> 5 </td>
-            <td bgcolor = "red"> 3 </td>
-            <td bgcolor = "red"> 4 </td>
-            <td bgcolor = "green"> 7 </td>
-        </tr>
-    </table>
+
+  <table>
+    <tr>
+      <td colspan="5">Classe 3C INF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TLC</td>
+      <td>Matematica</td>
+      <td>Informatica</td>
+      <td>Storia</td>
+    </tr>
+    <tr>
+      <td>Anna</td>
+      <td class="green">8</td>
+      <td class="red">4.5</td>
+      <td class="green">9</td>
+      <td class="green">10</td>
+    </tr>
+    <tr>
+      <td>Giovanni</td>
+      <td class="green">6</td>
+      <td class="yellow">5.5</td>
+      <td class="green">8</td>
+      <td class="green">7</td>
+    </tr>
+    <tr>
+      <td>Sara</td>
+      <td class="green">9</td>
+      <td class="yellow">5.5</td>
+      <td class="orange">5</td>
+      <td class="green">8</td>
+    </tr>
+    <tr>
+      <td>Luca</td>
+      <td class="orange">5</td>
+      <td class="red">3</td>
+      <td class="red">4</td>
+      <td class="green">7</td>
+    </tr>
+  </table>
+
 </body>
 </html>
-
