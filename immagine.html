@@ -1,28 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Immagine</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Immagine</title>
+  <style>
+    body {
+      background: #181818; /* nero soft */
+      color: #ddd;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 30px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      border: 2px solid #444;
+      background-color: #222;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #444;
+      margin: 30px auto;
+      width: 80%;
+      opacity: 0.4;
+    }
+
+    p[align="center"] font {
+      color: #a3a3a3;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 1.1em;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      max-width: 420px;
+      margin: 0 auto 30px;
+      padding-left: 1.3em;
+      text-align: left;
+    }
+
+    ul[type="circle"] {
+      list-style-type: circle;
+      color: #ccc;
+    }
+
+    ol[type="A"] {
+      list-style-type: upper-alpha;
+      color: #ccc;
+    }
+
+    li p {
+      margin: 6px 0;
+      color: #eee;
+    }
+
+    p {
+      color: #ccc;
+      font-size: 1.1em;
+      margin: 12px 0;
+    }
+  </style>
 </head>
 <body>
-    <center>
-    <img src= "https://www.comune.spoleto.pg.it/wp-content/uploads/2015/10/casa-vendita.jpg" alt = "foto casa">
-    </center>
-    <hr>
-    <p align = "center"> <font face="verdana"> <em> Font in Verdana </em> </font> </p>
-    <ul type="circle">
+
+  <center>
+    <img src="https://www.comune.spoleto.pg.it/wp-content/uploads/2015/10/casa-vendita.jpg" alt="foto casa" />
+  </center>
+
+  <hr />
+
+  <p align="center">
+    <font face="verdana"><em>Font in Verdana</em></font>
+  </p>
+
+  <ul type="circle">
     <p> apice: 7<sup>4</sup></p>
-    <p> pedice: C<sub>2 </p>
-    <li><p> testo 1 </a></p></li>
+    <p> pedice: C<sub>2</sub></p>
+    <li><p> testo 1 </p></li>
     <li><p> testo 2 </p></li>
     <li><p> testo 3 </p></li>
-    </ul>
-    <ol type = "A" start ="4">
-    <li> <p> testo 1 </p></li>
-    <li> <p> testo 2 </p></li>
-    <li> <p> testo 3 </p></li>
-    </ol>
-   
+  </ul>
+
+  <ol type="A" start="4">
+    <li><p> testo 1 </p></li>
+    <li><p> testo 2 </p></li>
+    <li><p> testo 3 </p></li>
+  </ol>
+
 </body>
 </html>
