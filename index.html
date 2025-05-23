@@ -48,7 +48,7 @@
       margin: 40px auto;
       padding: 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
@@ -79,6 +79,15 @@
 
     .link-box a:hover {
       color: #a9a9a9;
+    }
+
+    /* Posiziona gli ultimi due esercizi nell'ultima riga, colonne 2 e 3 */
+    .container .link-box:nth-last-child(2) {
+      grid-column: 2 / 3;
+    }
+
+    .container .link-box:nth-last-child(1) {
+      grid-column: 3 / 4;
     }
 
     .altervista-link {
