@@ -1,26 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appunti</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Appunti</title>
+  <style>
+    body {
+      /* Sfondo grigio scuro con sfumatura e leggero pattern di texture */
+      background: linear-gradient(135deg, #1c1c1c, #2f2f2f);
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 30px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 30px #00000088 inset;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Overlay pattern leggero tipo rumore */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.25;
+      z-index: 0;
+    }
+
+    /* Il contenuto sopra l'overlay */
+    body > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .prova1 {
+      color: #ff4d4d;
+      font-size: 2.5rem;
+      font-weight: 900;
+      font-family: 'Arial Black', Arial, sans-serif;
+      margin-bottom: 20px;
+      user-select: none;
+      text-shadow: 0 0 8px #ff4d4daa;
+    }
+
+    i {
+      color: #bbbbbb;
+      font-style: italic;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    b {
+      color: #fff;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    s {
+      color: #666;
+      text-decoration: line-through;
+      display: block;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    u {
+      color: #fff;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 25px;
+      font-size: 1.3rem;
+    }
+
+    ol, ul {
+      margin-left: 25px;
+      margin-bottom: 30px;
+    }
+
+    ol li, ul li {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+    }
+
+    ol {
+      list-style-type: decimal;
+      color: #ff4d4d;
+    }
+
+    ul {
+      list-style-type: disc;
+      color: #bbb;
+    }
+
+    ol li::marker {
+      color: #ff4d4d;
+      font-weight: bold;
+    }
+
+    ul li::marker {
+      color: #bbb;
+    }
+  </style>
 </head>
 <body>
-    <font color = "red" size ="15"
-    face = "Arial Black" > prova 1 </font>
-    <i> prova 2 </i>
-    <b> prova 3 </b>
-    <s> prova 4 </s>
-    <u> prova 5 </u>
-     <ol>
-        <li> elemento 1 </li>
-        <li> elemento 2 </li>
-        <li> elemento 3 </li>
-    </ol>
-    <ul> 
-        <li> elemento 1 </li>
-        <li> elemento 2 </li>
-        <li> elemento 3 </li>
-    </ul>
+
+  <div class="prova1">prova 1</div>
+  <i>prova 2</i>
+  <b>prova 3</b>
+  <s>prova 4</s>
+  <u>prova 5</u>
+
+  <ol>
+    <li>elemento 1</li>
+    <li>elemento 2</li>
+    <li>elemento 3</li>
+  </ol>
+
+  <ul>
+    <li>elemento 1</li>
+    <li>elemento 2</li>
+    <li>elemento 3</li>
+  </ul>
+
 </body>
 </html>
