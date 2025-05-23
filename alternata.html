@@ -1,6 +1,74 @@
-<html>
-</head> 
-<title> Tabella Alternata </title>
+<!DOCTYPE html>
+<html lang="it">
+<head> 
+  <meta charset="UTF-8" />
+  <title>Tabella Alternata Elegante</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #121212; 
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 80%;
+      max-width: 900px;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #1c1c1c; 
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    thead tr {
+      background-color: #333333; 
+      color: #f1f1f1;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    th {
+      padding: 15px 20px;
+      border-right: 1px solid #555555;
+    }
+
+    th:last-child {
+      border-right: none;
+    }
+
+    td {
+      padding: 15px 20px;
+      border-right: 1px solid #555555;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    td:last-child {
+      border-right: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #2a2a2a; 
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: #1c1c1c; 
+    }
+
+    tbody tr:hover {
+      background-color: #444444; 
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
 <body>
 
   <table>
@@ -13,16 +81,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>Riga 1, Colonna 1</td><td>Riga 1, Colonna 2</td><td>Riga 1, Colonna 3</td><td>Riga 1, Colonna 4</td></tr>
-      <tr><td>Riga 2, Colonna 1</td><td>Riga 2, Colonna 2</td><td>Riga 2, Colonna 3</td><td>Riga 2, Colonna 4</td></tr>
-      <tr><td>Riga 3, Colonna 1</td><td>Riga 3, Colonna 2</td><td>Riga 3, Colonna 3</td><td>Riga 3, Colonna 4</td></tr>
-      <tr><td>Riga 4, Colonna 1</td><td>Riga 4, Colonna 2</td><td>Riga 4, Colonna 3</td><td>Riga 4, Colonna 4</td></tr>
-      <tr><td>Riga 5, Colonna 1</td><td>Riga 5, Colonna 2</td><td>Riga 5, Colonna 3</td><td>Riga 5, Colonna 4</td></tr>
-      <tr><td>Riga 6, Colonna 1</td><td>Riga 6, Colonna 2</td><td>Riga 6, Colonna 3</td><td>Riga 6, Colonna 4</td></tr>
-      <tr><td>Riga 7, Colonna 1</td><td>Riga 7, Colonna 2</td><td>Riga 7, Colonna 3</td><td>Riga 7, Colonna 4</td></tr>
-      <tr><td>Riga 8, Colonna 1</td><td>Riga 8, Colonna 2</td><td>Riga 8, Colonna 3</td><td>Riga 8, Colonna 4</td></tr>
-      <tr><td>Riga 9, Colonna 1</td><td>Riga 9, Colonna 2</td><td>Riga 9, Colonna 3</td><td>Riga 9, Colonna 4</td></tr>
-      <tr><td>Riga 10, Colonna 1</td><td>Riga 10, Colonna 2</td><td>Riga 10, Colonna 3</td><td>Riga 10, Colonna 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
+      <tr><td>Numero 1</td><td>Numero 2</td><td>Numero 3</td><td>Numero 4</td></tr>
     </tbody>
   </table>
 
