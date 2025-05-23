@@ -1,62 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-  <body>
-    <h1>Toyota GT86</h1>
-    <img src="https://www.autoscout24.it/cms-content-assets/4u32Q4iYQcukfhf7Ae9xdh-f81f0e6f21d2bf72eeddb5536b11a7f0-toyota-gt86-front-1100.jpg" alt="Toyota GT86" width="500">
-    
-    <h2>Prezzi per modello e alimentazione</h2>
-    <table border="1">
-      <tr>
-        <td><b>Modello</b></td>
-        <td><b>Prezzo</b></td>
-        <td><b>Alimentazione</b></td>
-      </tr>
-      <tr>
-        <td>Sport M/T</td>
-        <td>37.250</td>
-        <td>Benzina</td>
-      </tr>
-      <tr>
-        <td>Premium Sport M/T</td>
-        <td>39.750</td>
-        <td>Benzina</td>
-      </tr>
-      <tr>
-        <td>Premium Sport A/T</td>
-        <td>41.750</td>
-        <td>Benzina</td>
-      </tr>
-    </table>
-    
-    <h2>Optional disponibili</h2>
-    <ul>
-      <li>Cerchi in lega da 18"</li>
-      <li>Sedili sportivi riscaldati</li>
-      <li>Blind Spot Monitor</li>
-      <li>Sistema di infotainment con schermo da 8"</li>
-    </ul>
-    
-    <h2>Punti di forza</h2>
-    <p>La Toyota GT86 è una sportiva compatta che offre una guida dinamica grazie alla trazione posteriore e al motore boxer. Con il suo telaio leggero e la rigidità migliorata, è perfetta per gli appassionati di guida sportiva.</p>
-    
-    <p>Per acquistare quest'auto in pochi passi, clicca sul link sotto:</p>
-    <a href="https://www.quattroruote.it/auto-usate/annunci/marca-toyota/modello-gt86" target="_blank">Acquista Toyota GT86</a>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toyota GT86</title>
+  <style>
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+      background: linear-gradient(135deg, #1f1f1f, #2e2e2e);
+    }
 
-    <h2>Modulo di richiesta</h2>
-    Nome della concessionaria visitata: <br>
-    <input type="text" name="concessionaria"><br><br>
-    
-    <input type="checkbox" name="privacy"> Acconsento al trattamento dei dati <br><br>
-    
-    Modello di interesse: <br>
-    <select name="modello">
+    h1, h2 {
+      color: #ff4d4d;
+      text-shadow: 0 0 10px #ff4d4d88;
+      margin-bottom: 15px;
+      user-select: none;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 0;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ff4d4d88;
+      /* effetto zoom rimosso */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #444;
+      background: #222;
+      color: #eee;
+    }
+
+    th {
+      background: #ff4d4d;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    /* rimosso hover sulle righe della tabella */
+    /*
+    tr:hover td {
+      background: #3b3b3b;
+    }
+    */
+
+    ul {
+      margin-bottom: 30px;
+      padding-left: 20px;
+      color: #ddd;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.15rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    a {
+      display: inline-block;
+      color: #ff4d4d;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #ff4d4d;
+      padding: 10px 18px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff4d4d77;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      user-select: none;
+    }
+
+    a:hover {
+      background-color: #ff4d4d;
+      color: #121212;
+      box-shadow: 0 0 20px #ff4d4dcc;
+    }
+
+    input[type="text"], select {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1.5px solid #555;
+      background-color: #222;
+      color: #eee;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus, select:focus {
+      outline: none;
+      border-color: #ff4d4d;
+      box-shadow: 0 0 8px #ff4d4daa;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    label {
+      font-size: 1rem;
+      color: #ddd;
+      user-select: none;
+    }
+
+    button {
+      background-color: #ff4d4d;
+      color: #121212;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #ff4d4daa;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      user-select: none;
+    }
+
+    button:hover {
+      background-color: #e04343;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff4d4dcc;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Toyota GT86</h1>
+  <img src="https://www.autoscout24.it/cms-content-assets/4u32Q4iYQcukfhf7Ae9xdh-f81f0e6f21d2bf72eeddb5536b11a7f0-toyota-gt86-front-1100.jpg" alt="Toyota GT86" width="500">
+
+  <h2>Prezzi per modello e alimentazione</h2>
+  <table>
+    <tr>
+      <th>Modello</th>
+      <th>Prezzo</th>
+      <th>Alimentazione</th>
+    </tr>
+    <tr>
+      <td>Sport M/T</td>
+      <td>37.250</td>
+      <td>Benzina</td>
+    </tr>
+    <tr>
+      <td>Premium Sport M/T</td>
+      <td>39.750</td>
+      <td>Benzina</td>
+    </tr>
+    <tr>
+      <td>Premium Sport A/T</td>
+      <td>41.750</td>
+      <td>Benzina</td>
+    </tr>
+  </table>
+
+  <h2>Optional disponibili</h2>
+  <ul>
+    <li>Cerchi in lega da 18"</li>
+    <li>Sedili sportivi riscaldati</li>
+    <li>Blind Spot Monitor</li>
+    <li>Sistema di infotainment con schermo da 8"</li>
+  </ul>
+
+  <h2>Punti di forza</h2>
+  <p>La Toyota GT86 è una sportiva compatta che offre una guida dinamica grazie alla trazione posteriore e al motore boxer. Con il suo telaio leggero e la rigidità migliorata, è perfetta per gli appassionati di guida sportiva.</p>
+
+  <p>Per acquistare quest'auto in pochi passi, clicca sul link sotto:</p>
+  <a href="https://www.quattroruote.it/auto-usate/annunci/marca-toyota/modello-gt86" target="_blank" rel="noopener noreferrer">Acquista Toyota GT86</a>
+
+  <h2>Modulo di richiesta</h2>
+
+  <div class="form-group">
+    <label for="concessionaria">Nome della concessionaria visitata:</label><br>
+    <input type="text" id="concessionaria" name="concessionaria" placeholder="Inserisci nome concessionaria" />
+  </div>
+
+  <div class="form-group">
+    <label><input type="checkbox" name="privacy" /> Acconsento al trattamento dei dati</label>
+  </div>
+
+  <div class="form-group">
+    <label for="modello">Modello di interesse:</label><br>
+    <select id="modello" name="modello">
       <option value="sport-mt">Sport M/T</option>
       <option value="premium-sport-mt">Premium Sport M/T</option>
       <option value="premium-sport-at">Premium Sport A/T</option>
-    </select><br><br>
-    
-    <button type="button">Invia</button>                                                                                            
-  </body>
+    </select>
+  </div>
+
+  <button type="button">Invia</button>
+</body>
 </html>
-
-
