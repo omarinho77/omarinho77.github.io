@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoxFlottanti</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BoxFlottanti con Flexbox</title>
     <style>
-        .alto{
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+        }
+        .alto, .basso {
             background-color: blue;
             height: 10em;
-            width: auto;
-            margin-left: 1em;
-            margin-right: 1em;
+            margin: 1em;
+            width: calc(100% - 2em);
+            border-radius: 8px;
         }
-        .sx{
-            background-color: red;
-            float: left;
-            clear: left;
-            margin-left: 1em;
-            margin-right: 1em;
-            height: 40em;
-            width: 21%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-        .centro{
-            background-color: orange;
-            float: left;
-            height: 40em;
-            width: 56em;
-            margin-top: 1em;
-        }
-        .dx{
-            background-color: yellow;
-            float: left;
-            margin-right: 1em;
-            height: 40em;
-            width: 28%;
-            margin-top: 1em;
-            margin-left: 1em;
-        }
-        .basso{
+        .basso {
             background-color: green;
-            clear: left;
-            height: 10em;
-            width: auto;
-            margin-left: 1em;
-            margin-right: 1em;
+        }
+
+        .container {
+            display: flex;
+            margin: 1em;
+            gap: 1em;
+            height: 40em;
+        }
+
+        .sx, .dx {
+            width: 25%;
+            border-radius: 8px;
+        }
+
+        .sx {
+            background-color: red;
+        }
+
+        .centro {
+            background-color: orange;
+            flex-grow: 1;
+            border-radius: 8px;
+        }
+
+        .dx {
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
     <div class="alto"></div>
-    <div class="sx"></div>
-    <div class="centro"></div>
-    <div class="dx"></div>
+
+    <div class="container">
+        <div class="sx"></div>
+        <div class="centro"></div>
+        <div class="dx"></div>
+    </div>
+
     <div class="basso"></div>
 </body>
 </html>
