@@ -6,7 +6,6 @@
   <title>Appunti</title>
   <style>
     body {
-      /* Sfondo grigio scuro con sfumatura e leggero pattern di texture */
       background: linear-gradient(135deg, #1c1c1c, #2f2f2f);
       color: #eee;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,12 +14,10 @@
       max-width: 700px;
       margin: 40px auto;
       border-radius: 12px;
-      box-shadow: 0 0 30px #00000088 inset;
       position: relative;
       overflow: hidden;
     }
 
-    /* Overlay pattern leggero tipo rumore */
     body::before {
       content: "";
       position: fixed;
@@ -32,7 +29,6 @@
       z-index: 0;
     }
 
-    /* Il contenuto sopra l'overlay */
     body > * {
       position: relative;
       z-index: 1;
@@ -45,7 +41,6 @@
       font-family: 'Arial Black', Arial, sans-serif;
       margin-bottom: 20px;
       user-select: none;
-      text-shadow: 0 0 8px #ff4d4daa;
     }
 
     i {
