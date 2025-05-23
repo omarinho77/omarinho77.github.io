@@ -1,30 +1,125 @@
-<html>
-<head> 
-  <h1> Sito di Omar Aniki </h1>
-  <h2> ad uso didattico </h2>
-  <link rel="icon" type="image/x-icon" href="morocco-circle-flag-free-png.webp">
-</head> 
-<body> 
-<a href="./intestazioni.html">intestazioni</a> <br></br>
-<a href="./paragrafi.html">paragrafi</a> <br></br>
-<a href="./appunti.html">appunti</a> <br></br>
-<a href="./tabella.html">tabella</a> <br></br>
-<a href="./immagine.html">immagine</a> <br></br>
-<a href="./registrazione.html">registrazione</a> <br></br>
-<a href="./auto.html">auto</a> <br></br>
-<a href="./boxflottante.html">box</a> <br></br>
-<a href="./ricetta.html">ricetta</a><br></br>
-<a href="./video.html">video</a> <br></br>
-<a href="./bootstrap.html">bootstrap</a> <br></br>
-<a href="./dropdown.html">dropdown</a> <br></br>
-<a href="./alternata.html">tabella alternata</a> <br></br>
-<a href="./modal.html">modal</a>
-  
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sito di Omar Aniki</title>
+  <link rel="icon" type="image/x-icon" href="morocco-circle-flag-free-png.webp" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2f2f2f, #000000);
+      min-height: 100vh;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
 
-  
+    header {
+      background-color: rgba(50, 50, 50, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    }
+
+    header h1 {
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1.2px;
+    }
+
+    header h2 {
+      font-size: 20px;
+      font-weight: 400;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .link-box {
+      background: rgba(70, 70, 70, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+      padding: 30px 15px;
+      text-align: center;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .link-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    }
+
+    .link-box a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      user-select: none;
+    }
+
+    .link-box a:hover {
+      color: #a9a9a9;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      color: #999999;
+      font-size: 14px;
+      padding: 30px 10px;
+      backdrop-filter: blur(10px);
+      background-color: rgba(30, 30, 30, 0.5);
+      box-shadow: 0 -6px 10px rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><strong>Sito di Omar Aniki</strong></h1>
+    <h2>Ad uso didattico</h2>
+  </header>
+
+  <div class="container">
+    <div class="link-box"><a href="./intestazioni.html">Intestazioni</a></div>
+    <div class="link-box"><a href="./paragrafi.html">Paragrafi</a></div>
+    <div class="link-box"><a href="./appunti.html">Appunti</a></div>
+    <div class="link-box"><a href="./tabella.html">Tabella</a></div>
+    <div class="link-box"><a href="./immagine.html">Immagine</a></div>
+    <div class="link-box"><a href="./registrazione.html">Registrazione</a></div>
+    <div class="link-box"><a href="./auto.html">Auto</a></div>
+    <div class="link-box"><a href="./boxflottante.html">Box</a></div>
+    <div class="link-box"><a href="./ricetta.html">Ricetta</a></div>
+    <div class="link-box"><a href="./video.html">Video</a></div>
+    <div class="link-box"><a href="./bootstrap.html">Bootstrap</a></div>
+    <div class="link-box"><a href="./dropdown.html">Dropdown</a></div>
+    <div class="link-box"><a href="./alternata.html">Tabella Alternata</a></div>
+    <div class="link-box"><a href="./modal.html">Modal</a></div>
+  </div>
+
+  <footer>
+    © 2025 Sito didattico di Omar Aniki
+  </footer>
+
 </body>
 </html>
-
-
-
