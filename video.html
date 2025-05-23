@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BoxFlottanti</title>
-    <style>
-        .alto{
-            background-color: blue;
-            height: 10em;
-            width: auto;
-            margin-left: 1em;
-            margin-right: 1em;
-        }
-        .sx{
-            background-color: red;
-            float: left;
-            clear: left;
-            margin-left: 1em;
-            margin-right: 1em;
-            height: 40em;
-            width: 21%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-        .centro{
-            background-color: orange;
-            float: left;
-            height: 40em;
-            width: 56em;
-            margin-top: 1em;
-        }
-        .dx{
-            background-color: yellow;
-            float: left;
-            margin-right: 1em;
-            height: 40em;
-            width: 28%;
-            margin-top: 1em;
-            margin-left: 1em;
-        }
-        .basso{
-            background-color: green;
-            clear: left;
-            height: 10em;
-            width: auto;
-            margin-left: 1em;
-            margin-right: 1em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portale Video</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+    }
+
+    .alto, .basso {
+      height: 10em;
+      margin: 1em;
+      border-radius: 8px;
+      width: calc(100% - 2em);
+    }
+
+    .alto {
+      background-color: blue;
+    }
+
+    .basso {
+      background-color: green;
+    }
+
+    .container {
+      display: flex;
+      gap: 1em;
+      margin: 1em;
+      height: 40em;
+    }
+
+    .sx, .dx {
+      width: 23%; 
+      border-radius: 8px;
+    }
+
+    .sx {
+      background-color: red;
+    }
+
+    .dx {
+      background-color: yellow;
+    }
+
+    .centro {
+      background-color: orange;
+      flex-grow: 1;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .centro iframe {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+  </style>
 </head>
 <body>
-    <div class="alto"></div>
+  <div class="alto"></div>
+
+  <div class="container">
     <div class="sx"></div>
-    <div class="centro"> <iframe width="896" height="640" src="https://www.youtube.com/embed/l3WTH0NaAfM" title="Come assemblare un PC - Guida passo passo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <div class="centro">
+      <iframe width="896" height="640" src="https://www.youtube.com/embed/l3WTH0NaAfM" title="Come assemblare un PC - Guida passo passo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <div class="dx"></div>
-    <div class="basso"></div>
+  </div>
+
+  <div class="basso"></div>
 </body>
 </html>
